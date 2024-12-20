@@ -1,27 +1,27 @@
 class Product {
-    private name:string;
-    price:number;
-    weight?:number; // 可选
+    private name: string;
+    price: number;
+    weight?: number; // 可选
 
-    constructor(name:string,price:number){
+    constructor(name: string, price: number) {
         this.name = name;
         this.price = price;
     }
 
-    setPrice(price:number){
+    setPrice(price: number) {
         this.price = price;
     }
 
-    getPrice(){
+    getPrice() {
         return this.price;
     }
 
-    getName(){
+    getName() {
         return this.name;
     }
 }
 
-let product = new Product("Mobile",10000);
+let product = new Product("Mobile", 10000);
 console.log(product.getPrice());
 
 product.setPrice(20000);
@@ -30,17 +30,25 @@ console.log(product.getPrice());
 // console.log(product.name); // error
 
 class Mobile extends Product {
-    constructor(name:string,price:number){
-        super(name,price);
+    constructor(name: string, price: number) {
+        super(name, price);
     }
 
     // getName(){
-        // return this.name;
+    // return this.name;
     // }
 }
 
-let mobile = new Mobile("Xiaomi",10000);
+let mobile = new Mobile("Xiaomi", 10000);
 
 console.log(mobile.getPrice());
 console.log(mobile.getName());
 // console.log(mobile.name);
+
+
+// static property
+class Maths {
+    static pi: number = 3.14
+}
+
+console.log(2 * Maths.pi)
