@@ -52,3 +52,26 @@ class Maths {
 }
 
 console.log(2 * Maths.pi)
+
+
+class Employee {
+    name: string
+    age: number
+    constructor(name: string, age: number) {
+        this.name = name
+        this.age = age
+    }
+
+    set emp_name(name: string) {
+        this.name = name
+    }
+    get emp_name(): string {
+        return this.name
+    }
+}
+
+
+const emp: Employee = new Employee("Look", 20)
+console.log(emp.emp_name)
+emp.emp_name = "Hello"
+console.log(emp.emp_name)
