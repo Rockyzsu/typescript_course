@@ -32,3 +32,14 @@ function math([math, eng]: [number, number]): number {
 
 const res = math([20, 30])
 console.log(res)
+
+//// from book
+let two_dimensional_arr:(number|string)[];
+two_dimensional_arr = ['hello',123,'world',567]
+two_dimensional_arr.map(x=>console.log(x))
+
+
+let stringArray:string[];
+stringArray = ['hello','world']
+// console.log(stringArray[3].length) // error, out of bond 但检测不出来
+export {}

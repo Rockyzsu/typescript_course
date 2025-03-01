@@ -33,3 +33,4 @@ const game: Gamble = new Gamble(origin_data)
 
 const shuff_data = game.shuff()
 console.log(shuff_data)
+
